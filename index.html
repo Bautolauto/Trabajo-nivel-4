@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bienvenido — Desarrollador de Videojuegos</title>
+  <meta name="description" content="Portafolio de desarrollo de videojuegos: demos, proyectos y contacto.">
+  <meta name="keywords" content="videojuegos, desarrollo, programador, Unity, Godot, C#, GDScript, indie, game developer">
+  <meta name="author" content="[Tu Nombre]">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Desarrollador de Videojuegos">
+  <meta property="og:description" content="Portafolio y demos de un desarrollador de videojuegos.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tu-dominio-o-usuario.github.io/">
+  <meta property="og:image" content="assets/cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Desarrollador de Videojuegos">
+  <meta name="twitter:description" content="Portafolio, proyectos y contacto.">
+  <meta name="twitter:image" content="assets/cover.jpg">
+  <link rel="canonical" href="https://tu-dominio-o-usuario.github.io/">
+
+  <!-- GitHub Pages CNAME -->
+  <!-- Crea un archivo llamado CNAME en la raíz de tu repositorio con el dominio personalizado, por ejemplo:  -->
+  <!-- ejemplo:  gamesbyjuan.com -->
+
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#0f1724;
+      --muted:#9aa4b2;
+      --accent:#7c5cff;
+      --glass: rgba(255,255,255,0.04);
+      --glass-2: rgba(255,255,255,0.02);
+      color-scheme: dark;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:radial-gradient(1200px 600px at 10% 10%, rgba(124,92,255,0.08), transparent), radial-gradient(900px 500px at 90% 90%, rgba(0,200,160,0.03), transparent), var(--bg); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
+    .wrap{max-width:1000px;margin:48px auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#00c8a0);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:36px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .hero{margin-top:28px;width:100%}
+    .card{background:linear-gradient(180deg,var(--glass),var(--glass-2));border-radius:14px;padding:20px;color:#e6eef8;box-shadow:0 6px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .intro h2{margin:0 0 8px;font-size:20px}
+    .ctas{display:flex;gap:10px;margin-top:16px}
+    .btn{padding:10px 14px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.06);cursor:pointer;color:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#00c8a0);color: #06121a;font-weight:700;border:none}
+    .meta{font-size:13px;color:var(--muted);margin-top:12px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:22px}
+    .project{padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border:1px solid rgba(255,255,255,0.03)}
+    .project h3{margin:0 0 6px;font-size:16px}
+    .project p{margin:0;color:var(--muted);font-size:13px}
+    footer{margin-top:30px;padding:18px;border-radius:12px;background:transparent;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+    @media (max-width:880px){.hero{width:100%}}
+    .bg-canvas{position:fixed;inset:0;pointer-events:none;mix-blend-mode:screen;opacity:0.45}
+    .small-note{font-size:13px;color:var(--muted)}
+    .chip{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);font-size:13px}
+  </style>
+</head>
+<body>
+  <canvas class="bg-canvas" id="bg"></canvas>
+  <main class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">🕹️</div>
+        <div>
+          <h1>Hola — Soy [Tu Nombre]</h1>
+          <p class="lead">Desarrollador de videojuegos · Programador · Game Designer</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero card intro">
+      <h2>Bienvenido a mi portafolio</h2>
+      <p class="meta">Creo experiencias interactivas usando Unity, Python, Scratch. Me interesa llevar ideas desde el prototipo hasta la publicación en PC y plataformas digitales.</p>
+      <div class="ctas">
+        <a class="btn primary" href="https://github.com/tu-usuario" target="_blank" rel="noopener">Ver Proyectos</a>
+       
+      </div>
+      
+    </section>
+
+    <section id="projects">
+      <h2 style="margin-top:28px">Proyectos destacados</h2>
+      <div class="grid">
+        <div class="project card">
+          <h3>Proyecto A — Nombre</h3>
+          <p>Descripción. Repositorio: <a href="https://github.com/tu-usuario/proyecto-a" target="_blank">github</a></p>
+        </div>
+        <div class="project card">
+          <h3>Proyecto B</h3>
+          <p>Muy pronto</p>
+        </div>
+        <div class="project card">
+          <h3>Proyecto C</h3>
+          <p>Muy pronto</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:22px">
+      <h2>Contacto</h2>
+      <div class="card" style="display:flex;gap:18px;align-items:center;flex-wrap:wrap">
+        <div>
+          <p class="small-note">¿Quieres colaboraciones, contrataciones o feedback? Escríbeme:</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <a class="btn" href="mailto:tu.nombre@email.com">Enviar email</a>
+   
+          <a class="btn" href="assets/CV.pdf" download>Descargar CV</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="small-note">© <span id="year"></span> [Tu Nombre] — Desarrollador de videojuegos</div>
+      <div class="small-note">Hospedado en GitHub Pages</div>
+    </footer>
+  </main>
+
+  <script>
+    (function(){
+      const d = new Date();
+      const yy = d.getFullYear();
+      document.getElementById('year').textContent = yy;
+    })();
+
+    (function(){
+      const canvas = document.getElementById('bg');
+      const ctx = canvas.getContext('2d');
+      let w, h, particles=[];
+      function resize(){w=canvas.width = innerWidth; h=canvas.height=innerHeight}
+      window.addEventListener('resize', resize); resize();
+      function rand(min,max){return Math.random()*(max-min)+min}
+      for(let i=0;i<120;i++) particles.push({x:rand(0,w),y:rand(0,h),r:rand(0.4,2.2),v:rand(0.02,0.6),a:rand(0,Math.PI*2)});
+      function draw(){ctx.clearRect(0,0,w,h); particles.forEach(p=>{p.x += Math.cos(p.a)*p.v; p.y += Math.sin(p.a)*p.v; p.a += 0.002;
+        if(p.x<0) p.x=w; if(p.x>w) p.x=0; if(p.y<0) p.y=h; if(p.y>h) p.y=0;
+        ctx.beginPath(); ctx.globalAlpha=0.85*(p.r/2.2); ctx.fillStyle='white'; ctx.arc(p.x,p.y,p.r,0,Math.PI*2); ctx.fill();
+      }); requestAnimationFrame(draw);} draw();
+    })();
+  </script>
+</body>
+</html>
